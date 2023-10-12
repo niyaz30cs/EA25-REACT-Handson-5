@@ -1,38 +1,101 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-image: linear-gradient(rgb(150, 184, 248),pink,rgb(249, 233, 249));
+  background-repeat: no-repeat;
+  /* font-family: cursive; */
+}
+.center
+{
   text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+  color: blue;
+  font-weight: bold;
+  text-shadow: 4px 4px 3px white;
+}
+.UnOrderList
+{
+  color:crimson;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.btnArea
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.btn
+{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: dodgerblue;
+}
+.btn:hover
+{
+  background-color: green;
+  color: white;
+}
+.hrLine
+{
+  height: 5px;
+  background-color: black;
+  margin-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* HigherOrder Component css */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.orderList
+{
+  margin-left: 50px;
+  color: cornflowerblue;
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HocBtn
+{
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size:15px;
+  margin: 10px;
+}
+.HocBtn:hover
+{
+  background-color:yellow;
+  color: black;
+}
+.HocCenter
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
 }
-
-.App-link {
-  color: #61dafb;
+.firstHoc
+{
+  background-color: orangered;
+  width: 100vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SecondHoc
+{
+  background-color: white;
+  width: 100vw;
+}
+.LastHoc
+{
+  background-color: green;
+  width: 100vw;
 }
